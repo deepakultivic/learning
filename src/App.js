@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/about" exact component={About} />
       </Switch>
     </BrowserRouter>
+    
   );
 };
 
