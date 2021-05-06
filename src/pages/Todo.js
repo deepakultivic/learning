@@ -8,10 +8,10 @@ export const Todo =(props) =>{
             todos items list
             {/* {props.todo} */}
             {/* <TodosItem todo={props.todo[0]}/> */}
-            {props.todo.map((todo) => {
+            {props.todo.map((todo, dns) => {
                 return(
                   
-                        <TodosItem key={todo.dsfdssdfsdns} onDelete={props.onDelete}/> 
+                        <TodosItem todo={todo} key={dns} onDelete={props.onDelete}/> 
                 
                 )
             })}
