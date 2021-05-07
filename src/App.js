@@ -9,6 +9,9 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
+import {Create} from './curdApp/Create';
+import {Update} from './curdApp/Update';
+import {Read} from './curdApp/Read';
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
+        <Route path="/create" exact component={Create} />
+        <Route path="/read" exact component={Read} />
+        <Route path="/update" exact component={Update} />
       </Switch>
     </BrowserRouter>
   );
