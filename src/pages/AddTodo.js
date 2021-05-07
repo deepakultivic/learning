@@ -8,11 +8,14 @@ export  const Addtodo =({addTodo}) =>{
         if(!title || !desc){
             alert('title or decription cannot be blank');
         }
-        addTodo(title,desc);
+       else{ addTodo(title,desc);
+        setTitle("");
+        setDesc("");}
     }
 return(
     <>
- <div className="container mt-5">
+ <div className="container ">
+ <div className="myform">
  <form onSubmit={submit}>
   <div className="form-group" >
     <label htmlFor="title">Todo title</label>
@@ -26,6 +29,7 @@ return(
  
   <button type="submit" className="btn btn-primary brn-sm">Submit</button>
 </form>
+ </div>
   
  </div>
  </>

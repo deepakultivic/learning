@@ -5,11 +5,11 @@ export const Todo =(props) =>{
     return(
         <>
         <div className="container py-5 ">
-        <h3>
-            todos items list
+        <div>
+           <h3 className="heading"> Todos items list</h3>
             {/* {props.todo} */}
             {/* <TodosItem todo={props.todo[0]}/> */}
-            {props.todo.length==0? "no todos available" :
+            {props.todo.length==0? "No todos available" :
             props.todo.map((todo, dns) => {
                 return(
                   
@@ -18,7 +18,7 @@ export const Todo =(props) =>{
                 
                 )
             })}
-        </h3>
+        </div>
         </div>
         </>
     );
