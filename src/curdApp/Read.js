@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import Header from '../components/Header';
 import {Footer} from '../components/Footer';
+import {Create} from '../curdApp/Create';
 export const Read = () => {
+
+const [value, setvalue] = useState(
+  {
+
+  }
+)
+  let initValue;
+  if(localStorage.getItem("inputs") ===null ){
+      initValue = []; 
+  }
+  else{
+      initValue = JSON.parse(localStorage.getItem("inputs"));
+      console.log(localStorage);
+  }
+
+
     return (
     
         <div>
@@ -21,15 +38,17 @@ export const Read = () => {
     </tr>
   </thead>
   <tbody>
+
     <tr>
+      
       <th scope="row">1</th>
-      <td>Deepak</td>
-      <td>Chauhan</td>
-      <td>deepak.chauhan@ultivic.com</td>
-      <td>23</td>
-      <td>Male</td>
-      <td>Punjab</td>
-      <td>Amritsar</td>
+      <td>{value.firstName}</td>
+      <td>{value.lastName}</td>
+      <td>{value.email}</td>
+      <td>{value.age}</td>
+      <td>{value.gender}</td>
+      <td>{value.state}</td>
+      <td>{value.city}</td>
     </tr>
    
   </tbody>

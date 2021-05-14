@@ -12,6 +12,7 @@ import About from './pages/About';
 import {Create} from './curdApp/Create';
 import {Update} from './curdApp/Update';
 import {Read} from './curdApp/Read';
+import Login from './curdApp/Login';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/create" exact component={Create} />
         <Route path="/read" exact component={Read} />
         <Route path="/update" exact component={Update} />
+        <Route path="/login" exact component={Login} />
       </Switch>
     </BrowserRouter>
   );
