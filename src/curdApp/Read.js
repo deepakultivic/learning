@@ -4,20 +4,6 @@ import {Footer} from '../components/Footer';
 import {Create} from '../curdApp/Create';
 export const Read = () => {
 
-const [value, setvalue] = useState(
-  {
-
-  }
-)
-  let initValue;
-  if(localStorage.getItem("inputs") ===null ){
-      initValue = []; 
-  }
-  else{
-      initValue = JSON.parse(localStorage.getItem("inputs"));
-      console.log(localStorage);
-  }
-
 
     return (
     
@@ -42,13 +28,13 @@ const [value, setvalue] = useState(
     <tr>
       
       <th scope="row">1</th>
-      <td>{value.firstName}</td>
-      <td>{value.lastName}</td>
-      <td>{value.email}</td>
-      <td>{value.age}</td>
-      <td>{value.gender}</td>
-      <td>{value.state}</td>
-      <td>{value.city}</td>
+      <td>firstName</td>
+      <td>lastName</td>
+      <td>email</td>
+      <td>age</td>
+      <td>gender</td>
+      <td>state</td>
+      <td>city</td>
     </tr>
    
   </tbody>

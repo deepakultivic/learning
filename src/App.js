@@ -13,6 +13,7 @@ import {Create} from './curdApp/Create';
 import {Update} from './curdApp/Update';
 import {Read} from './curdApp/Read';
 import Login from './curdApp/Login';
+import Test from './pages/Test';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/read" exact component={Read} />
         <Route path="/update" exact component={Update} />
         <Route path="/login" exact component={Login} />
+        <Route path="/test" exact component={Test} />
       </Switch>
     </BrowserRouter>
   );

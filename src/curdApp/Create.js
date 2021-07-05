@@ -30,7 +30,7 @@ export const Create = () => {
        setSubmitted(false);
        if (handleValidate(inputs)){
            setLoading(false);
-           localStorage.setItem("inputs", JSON.stringify(inputs))
+           localStorage.setItem("inputs", JSON.stringify(inputs));
            SetInput ({ firstName:"", lastName:"", email:"",age:"", gender:"", state:"",city:""});
          
            
