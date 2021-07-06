@@ -4,6 +4,7 @@ import Shortcircuit from "../reacthooks/shortcircuit";
 import Basicform from "../reacthooks/basicform";
 import UseEffefect1 from "../components/useEffect/useEffefect1";
 import UseEffect2 from "../components/useEffect/useEffect2";
+import UseReff from "../components/github/useRef";
 function Test() {
   const [count, setCount] = useState(0);
   const [myName, setmyName] = useState("Deepak");
@@ -93,7 +94,8 @@ function Test() {
       <Shortcircuit />
       <Basicform/>
       <UseEffefect1/>    
-      <UseEffect2/>               
+      <UseEffect2/>      
+      <UseReff/>         
     </div>
   );
 }

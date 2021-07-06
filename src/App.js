@@ -14,6 +14,7 @@ import {Update} from './curdApp/Update';
 import {Read} from './curdApp/Read';
 import Login from './curdApp/Login';
 import Test from './pages/Test';
+import UseEffectapi from './components/useEffect/useEffectapi';
 
 const App = () => {
   return (
@@ -26,6 +27,8 @@ const App = () => {
         <Route path="/update" exact component={Update} />
         <Route path="/login" exact component={Login} />
         <Route path="/test" exact component={Test} />
+        <Route path="/useEffectapi" exact component={UseEffectapi} />
+        
       </Switch>
     </BrowserRouter>
   );

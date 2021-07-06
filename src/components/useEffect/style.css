@@ -1,0 +1,41 @@
+.user_info {
+    display: flex;
+    justify-content: space-around;
+    background: #ddd;
+    padding: 10px;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.user_info p {
+    margin: 0;
+}
+
+p.art {
+    font-size: 14px;
+    color: #a5a5a5;
+}
+
+p.art_number {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+p.user_name {
+    font-size: 20px;
+}
+
+.grid_inner {
+    display: flex;
+    margin-bottom: 41px;
+}
+
+.imge_sec img {
+    width: 100px;
+    height: 118px;
+    object-fit: cover;
+}
+
+.grid_content {
+    width: 100%;
+}
