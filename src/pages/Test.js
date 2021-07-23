@@ -5,6 +5,7 @@ import Basicform from "../reacthooks/basicform";
 import UseEffefect1 from "../components/useEffect/useEffefect1";
 import UseEffect2 from "../components/useEffect/useEffect2";
 import UseReff from "../components/github/useRef";
+import UseReducer from "../reacthooks/useReducer";
 function Test() {
   const [count, setCount] = useState(0);
   const [myName, setmyName] = useState("Deepak");
@@ -95,7 +96,8 @@ function Test() {
       <Basicform/>
       <UseEffefect1/>    
       <UseEffect2/>      
-      <UseReff/>         
+      <UseReff/>   
+      <UseReducer/>      
     </div>
   );
 }

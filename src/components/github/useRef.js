@@ -9,7 +9,7 @@ const UseReff = () => {
         name===""? alert("fill the value"): setShow(true);
         // console.log(myvalue.current.value)
     }
-    use
+  
     return (
         <div>
             <form onSubmit={submit}>
@@ -21,7 +21,7 @@ const UseReff = () => {
             </form>
             <div>
                 
-                <p>{show ? `your lucky name is${myvalue.current.value}`:""}</p>
+                <p>{show ? `your lucky name is ${myvalue.current.value}`:""}</p>
             </div>
         </div>
     )

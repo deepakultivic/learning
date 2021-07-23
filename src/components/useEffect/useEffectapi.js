@@ -26,7 +26,7 @@ if(loading){
 }
   return (
     <div>
-      <div className="grid_line">
+      <div className="grid_line py-5">
         <div className="container">
           <div className="row">
             {users.map((curElem, idex) => {

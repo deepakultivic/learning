@@ -2,9 +2,13 @@ import react, {useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Todo from "../pages/Todo";
 import  {Addtodo} from "../pages/AddTodo";
-import {Footer} from "../components/Footer";
+import {Footer} from "../components/Footer";  
 import '../App'
+import { useHistory } from 'react-router-dom'
+
 function Home(){
+
+    const history = useHistory();
     let initTodo;
     if(localStorage.getItem("todos") ===null ){
         initTodo = [];
@@ -48,9 +52,11 @@ function Home(){
     <Header title="Ultivic" ></Header>
     <Addtodo addTodo={addTodo}/>
     <Todo todo={todos} onDelete={onDelete}/>
+   <button onClick={history.goBack}> Go back</button>
     <Footer/>
-   
         </>
+
+        
     );
 }
 export default Home;

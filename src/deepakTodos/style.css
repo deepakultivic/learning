@@ -1,0 +1,30 @@
+.show_items {
+    display: flex;
+    align-items: center;
+    background: #ddd;
+}
+
+.show_items h3 {
+    flex-grow: 1;
+}
+
+.show_items i {
+    margin-right: 20px;
+}
+
+.additems {
+    background: #ddd;
+    margin-bottom: 21px;
+}
+
+.additems input {
+    background: transparent;
+    border: transparent;
+    box-shadow: unset;
+    margin: 0;
+    padding: 30px;
+    width: 98%;
+}
+.show_items {
+    margin-bottom: 20px;
+}
