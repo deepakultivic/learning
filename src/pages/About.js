@@ -4,6 +4,7 @@ import {Footer} from "../components/Footer";
 import { useLocation, useHistory } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Filtertodo from '../deepakTodos/filtertodo';
 const About = () => {
     const location = useLocation();
     const history= useHistory();
@@ -36,6 +37,7 @@ const About = () => {
             log In
         </button>
         <ToastContainer />
+                <Filtertodo/>
          <Footer/>  
         </>
     );
