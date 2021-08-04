@@ -5,7 +5,7 @@ import './style.css'
 
 const allcatvalues = [...new Set(Menu.map((elem) =>elem.category)
 ),"all"]
- console.log(allcatvalues);
+//  console.log(allcatvalues);
 
 const Filtertodo = () => {
      const [item, setItem] = useState(Menu);
@@ -40,8 +40,8 @@ const Filtertodo = () => {
         </div>
         <div className="row">
           {
-              item.map((elem,index)=>{
-                  const{id,name,category,price,description,image}= elem;
+              item.filter((item, index) => index < 6).map((elem,index)=>{
+                  const{name,price,image}= elem;
                   return(
                     <div className="col-md-4" key={index}>
                     <article>
@@ -50,7 +50,6 @@ const Filtertodo = () => {
                       </figure>
                       <div className="grid_content">
                         <h3 className="name_cate">{name}</h3>
-                        {/* <p className="description_text">{description}</p> */}
                         <div className="price">
                           <p>{price}</p> <button>Order now</button>
                         </div>

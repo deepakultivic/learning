@@ -24,6 +24,22 @@ const Menu = [
         description:"lorem ipsum sitt dollar inforgettable things"
        },
        {
+        id:9,
+        image:"assets/images/meggi.jpg",
+        name:"Meggi",
+        category:"breakfast",
+        price:"10Rs",
+        description:"lorem ipsum sitt dollar inforgettable things"
+       },
+       {
+        id:10,
+        image:"assets/images/meggi.jpg",
+        name:"Meggi",
+        category:"breakfast",
+        price:"10Rs",
+        description:"lorem ipsum sitt dollar inforgettable things"
+       },
+       {
         id:4,
         image:"assets/images/chole.jpg",
         name:"Chola",
@@ -44,6 +60,22 @@ const Menu = [
         image:"assets/images/meggi.jpg",
         name:"corn",
         category:"breakfast",
+        price:"10Rs",
+        description:"lorem ipsum sitt dollar inforgettable things"
+       },
+       {
+        id:11,
+        image:"assets/images/meggi.jpg",
+        name:"Meggi",
+        category:"breakfast",
+        price:"10Rs",
+        description:"lorem ipsum sitt dollar inforgettable things"
+       },
+       {
+        id:7,
+        image:"assets/images/meggi.jpg",
+        name:"corn",
+        category:"Dinner",
         price:"10Rs",
         description:"lorem ipsum sitt dollar inforgettable things"
        },

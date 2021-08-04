@@ -6,9 +6,17 @@ import UseEffefect1 from "../components/useEffect/useEffefect1";
 import UseEffect2 from "../components/useEffect/useEffect2";
 import UseReff from "../components/github/useRef";
 import UseReducer from "../reacthooks/useReducer";
+import Appdemo from "../useContext/Appdemo";
 function Test() {
   const [count, setCount] = useState(0);
   const [myName, setmyName] = useState("Deepak");
+  
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    // clicked ? setClicked('') : setClicked('base-state click-state');
+    setClicked(!clicked)
+  };
   const onChange = () => {
     setCount(count + 1);
   };
@@ -90,14 +98,22 @@ function Test() {
           Name:{myObject.name} Age:{myObject.age}{" "}
         </h2>
         <button onClick={changeName}>Change Name</button>
+
+        <div className={`app ${clicked ? "danger" :""}` }><button  onClick={()=> handleClick(1)}>click here</button></div>
+        <div className={`app ${clicked ? "danger" :""}` }><button  onClick={()=> handleClick(2)}>click here</button></div>
+         <div className={`app ${clicked ? "danger" :""}` }><button  onClick={()=> handleClick(3)}>click here</button></div>
+        
       </div>
       <Todo />
       <Shortcircuit />
-      <Basicform/>
-      <UseEffefect1/>    
-      <UseEffect2/>      
-      <UseReff/>   
-      <UseReducer/>      
+      <Basicform />
+      <UseEffefect1 />
+      <UseEffect2 />
+      <UseReff />
+      <UseReducer />
+      <div className="container">
+         <Appdemo/>
+      </div>
     </div>
   );
 }

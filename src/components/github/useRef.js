@@ -11,7 +11,7 @@ const UseReff = () => {
     }
   
     return (
-        <div>
+        <React.Fragment>
             <form onSubmit={submit}>
             <div className="input-group">
                 <input type="text" ref={myvalue} />
@@ -23,7 +23,7 @@ const UseReff = () => {
                 
                 <p>{show ? `your lucky name is ${myvalue.current.value}`:""}</p>
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 

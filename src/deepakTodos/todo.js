@@ -1,14 +1,14 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
-const getLocaItems =( )=>{
-    let list = localStorage.getItem('list');
-    console.log(list);
-    if(list){
-        return JSON.parse(localStorage.getItem('list'));
-    }
-    else{
-       return [];
-    }
+const getLocaItems = () => {
+  let list = localStorage.getItem('list');
+  console.log(list);
+  if (list) {
+    return JSON.parse(localStorage.getItem('list'));
+  }
+  else {
+    return [];
+  }
 }
 const Todo = () => {
   const [input, setInput] = useState("");

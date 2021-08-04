@@ -16,6 +16,9 @@ import Test from './pages/Test';
 import UseEffectapi from './components/useEffect/useEffectapi';
 import Apps from './forms/app';
 import Todo from './deepakTodos/todo';
+import Cart from './components/shoping/cart';
+import Appdemo from './useContext/Appdemo';
+import Reduxpage from './pages/reduxpage';
 const App = () => {
   
   return (
@@ -31,6 +34,10 @@ const App = () => {
         <Route path="/useEffectapi" exact component={UseEffectapi} />
         <Route path="/app" exact component={Apps} />
         <Route path="/todo" exact component={Todo} />
+        <Route path="/cart" exact component={Cart} />
+        <Route path="/appdemo" exact component={Appdemo} />
+        <Route path="/reduxpage" exact component={Reduxpage} />
+
         
       </Switch>
     </BrowserRouter>
