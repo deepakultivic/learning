@@ -19,6 +19,7 @@ import Todo from './deepakTodos/todo';
 import Cart from './components/shoping/cart';
 import Appdemo from './useContext/Appdemo';
 import Reduxpage from './pages/reduxpage';
+import Reduxtodo from './pages/reduxtodo';
 const App = () => {
   
   return (
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/cart" exact component={Cart} />
         <Route path="/appdemo" exact component={Appdemo} />
         <Route path="/reduxpage" exact component={Reduxpage} />
+        <Route path="/reduxtodo" exact component={Reduxtodo} />
 
         
       </Switch>

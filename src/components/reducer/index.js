@@ -1,7 +1,10 @@
 import changeTheNumber from "./updown";
+import addtodo from "./todofunc";
 import { combineReducers } from "redux";
 
 const rootReducer =combineReducers({
-    changeTheNumber
+    changeTheNumber,addtodo
 })
 export default rootReducer;
+
+
