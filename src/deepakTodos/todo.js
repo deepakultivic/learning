@@ -12,7 +12,7 @@ const getLocaItems = () => {
 }
 const Todo = () => {
   const [input, setInput] = useState("");
-  const [additemss, setAdditemss] = useState(getLocaItems());
+  const [additemss, setAdditemss] = useState([getLocaItems()]);
   const additems = () => {
     if (!input) {
     } else {
@@ -24,8 +24,14 @@ const Todo = () => {
     const updateddate = additemss.filter((elem, index) => {
       return index !== id;
     });
+    
     setAdditemss(updateddate);
   };
+  const edititem = (id) =>{
+    const editItem = additems.find((elem, index)=>{
+      return index === id;
+    })
+  }
   useEffect(() => {
     localStorage.setItem('list', JSON.stringify(input))
   }, [input]);
@@ -55,6 +61,7 @@ const Todo = () => {
                 onClick={() => deletitems(index)}
                 aria-hidden="true"
               ></i>
+              <i className="fa fa-edit" onClick = {()=>edititem(index) }></i>
             </div>
           );
         })}

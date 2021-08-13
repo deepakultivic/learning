@@ -46,7 +46,7 @@ const Filtertodo = () => {
                     <div className="col-md-4" key={index}>
                     <article>
                       <figure>
-                        <img src={image} alt="image" />
+                        <img src={image} className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" alt="image" />
                       </figure>
                       <div className="grid_content">
                         <h3 className="name_cate">{name}</h3>
